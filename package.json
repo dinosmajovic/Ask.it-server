@@ -1,0 +1,36 @@
+{
+  "name": "ask.it-server",
+  "version": "1.0.0",
+  "description": "RESTful API for Question and Answer platform",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "debug": "nodemon --inspect ./src/index.js",
+    "lint": "eslint ./src/ --ignore-path .gitignore"
+  },
+  "author": "Dino Smajovic",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.15.2",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv-safe": "^6.1.0",
+    "express": "^4.16.4",
+    "express-validation": "^1.0.2",
+    "helmet": "^3.16.0",
+    "http-status": "^1.3.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  }
+}
